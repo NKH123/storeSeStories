@@ -1,0 +1,12 @@
+    <br>
+    <div class="container">
+      <ons-carousel #carousel centered swipeable auto-scroll overscrollable id="carousel" *ngIf="images">
+        <ons-card *ngFor="let image of images" class="" style="margin: auto; padding: auto;"> 
+          <ons-carousel-item >
+            <div class="picsum-img-wrapper" style="margin-top: auto;">
+              <img [src]="image" alt="story slide" class="img-fluid" style="width: auto; height: auto;" >
+            </div>
+          </ons-carousel-item>
+        </ons-card>
+      </ons-carousel>
+    </div>
